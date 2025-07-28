@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFEN GROUP S.A.S - Ingeniería y Construcción</title>
+    <link rel="icon" href="https://i.ibb.co/1Y7K1vsV/Imagen1.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 24px;
+            height: calc(100% - 24px);
+            width: 2px;
+            background: #d1f63b;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+           <div class="flex items-center mr-3">
+    <img src="https://i.ibb.co/1Y7K1vsV/Imagen1.png" alt="Logo" class="w-20 h-20 object-contain">
+    <h1 class="ml-3 text-xl md:text-2xl font-bold text-gray-800">
+        AFEN GROUP <span class="text-yellow-600">S.A.S</span>
+    </h1>
+</div>
+
+            <nav class="hidden md:flex space-x-8">
+                <a href="#inicio" class="text-gray-700 hover:text-yellow-600 font-medium">Inicio</a>
+                <a href="#nosotros" class="text-gray-700 hover:text-yellow-600 font-medium">Nosotros</a>
+                <a href="#servicios" class="text-gray-700 hover:text-yellow-600 font-medium">Servicios</a>
+                <a href="#experiencia" class="text-gray-700 hover:text-yellow-600 font-medium">Experiencia</a>
+                <a href="#contacto" class="text-gray-700 hover:text-yellow-600 font-medium">Contacto</a>
+            </nav>
+            <button class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Soluciones Integrales en Ingeniería y Construcción</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Expertos en planeación, gestión y ejecución de proyectos de ingeniería y arquitectura en Melgar y todo Colombia</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contacto" class="bg-yellow-500 hover:bg-yellow-700 text-white px-8 py-3 rounded-lg font-semibold transition duration-300">Contáctenos</a>
+                <a href="#servicios" class="bg-white hover:bg-gray-100 text-yellow-600 px-8 py-3 rounded-lg font-semibold transition duration-300">Nuestros Servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Sobre Nosotros</h2>
+                <div class="w-20 h-1 bg-yellow-600 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/2">
+                    <img src="https://i.ibb.co/1Y7K1vsV/Imagen1.png" alt="AFEN GROUP Team" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="bg-yellow-50 p-6 rounded-lg mb-8">
+                        <p class="text-gray-700 mb-4"><span class="font-bold">AFEN GROUP S.A.S</span> es una empresa constituida legalmente e inscrita en la Cámara de Comercio del Sur y Oriente del Tolima, con Nit. No. 900.888.682-9 como Constructor y Consultor, dedicada a la planeación, gestión y ejecución de estudios y proyectos de Ingeniería y Arquitectura.</p>
+                        <p class="text-gray-700">Hemos desarrollado nuestros trabajos a nivel local y nacional, principalmente en el Municipio de Melgar Tolima, participando activamente en convocatorias para la ejecución de obras, consultorías e interventorías.</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-600">
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">Misión</h3>
+                            <p class="text-gray-600">Contribuir activamente en el desarrollo de nuestra sociedad mediante proyectos de Arquitectura y obra Civil ejecutados con calidad, eficiencia y conservación del medio ambiente.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-600">
+                            <h3 class="text-xl font-bold text-gray-800 mb-3">Visión 2030</h3>
+                            <p class="text-gray-600">Ser una empresa constructora posicionada en el mercado, garantizando cada proyecto con alto grado de calidad y cumplimiento de normas legales vigentes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Objetivos Principales</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                        <div class="text-yellow-600 mb-3">
+                            <i class="fas fa-chart-line text-3xl"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Eficiencia en obras</h4>
+                        <p class="text-gray-600">Obtención de niveles de eficiencia en la ejecución de las obras.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                        <div class="text-yellow-600 mb-3">
+                            <i class="fas fa-recycle text-3xl"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Optimización de recursos</h4>
+                        <p class="text-gray-600">Implementación de principios de economía y optimización de recursos.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                        <div class="text-yellow-600 mb-3">
+                            <i class="fas fa-clipboard-check text-3xl"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Control de calidad</h4>
+                        <p class="text-gray-600">Adopción de procesos de control de calidad en los proyectos.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                        <div class="text-yellow-600 mb-3">
+                            <i class="fas fa-chart-pie text-3xl"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Mejoramiento continuo</h4>
+                        <p class="text-gray-600">Implementación de estrategias de mejoramiento continuo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nuestros Servicios</h2>
+                <div class="w-20 h-1 bg-yellow-600 mx-auto"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Ofrecemos soluciones integrales en ingeniería y construcción con los más altos estándares de calidad.</p>
+            </div>
+            
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Áreas Profesionales</h3>
+                
+                <!-- Civil Engineering -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+                    <div class="bg-yellow-600 text-white px-6 py-4 flex items-center">
+                        <i class="fas fa-hard-hat text-2xl mr-4"></i>
+                        <h4 class="text-xl font-bold">Ingeniero Civil</h4>
+                    </div>
+                    <div class="p-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="service-card bg-gray-50 p-6 rounded-lg transition duration-300">
+                                <div class="text-yellow-600 mb-3">
+                                    <i class="fas fa-drafting-compass text-2xl"></i>
+                                </div>
+                                <h5 class="font-bold mb-2">Diseños y Cálculos Estructurales</h5>
+                                <p class="text-gray-600 text-sm">Soluciones estructurales precisas y seguras para todo tipo de proyectos.</p>
+                            </div>
+                            <div class="service-card bg-gray-50 p-6 rounded-lg transition duration-300">
+                                <div class="text-yellow-600 mb-3">
+                                    <i class="fas fa-tint text-2xl"></i>
+                                </div>
+                                <h5 class="font-bold mb-2">Diseños Hidráulicos y sanitarios</h5>
+                                <p class="text-gray-600 text-sm">Sistemas eficientes de agua potable y saneamiento básico.</p>
+                            </div>
+                            <div class="service-card bg-gray-50 p-6 rounded-lg transition duration-300">
+                                <div class="text-yellow-600 mb-3">
+                                    <i class="fas fa-road text-2xl"></i>
+                                </div>
+                                <h5 class="font-bold mb-2">Construcción de Vías y Estructuras</h5>
+                                <p class="text-gray-600 text-sm">Infraestructura vial y estructural con los más altos estándares.</p>
+                            </div>
+                            <div class="service-card bg-gray-50 p-6 rounded-lg transition duration-300">
+                                <div class="text-yellow-600 mb-3">
+                                    <i class="fas fa-clipboard-list text-2xl"></i>
+                                </div>
+                                <h5 class="font-bold mb-2">Gerencia de Proyectos</h5>
+                                <p class="text-gray-600 text-sm">Gestión profesional de proyectos de construcción.</p>
+                            </div>
+                            <div class="service-card bg-gray-50 p-6 rounded-lg transition duration-300">
+                                <div class="text-yellow-600 mb-3">
+                                    <i class="fas fa-shield-alt text-2xl"></i>
+                                </div>
+                                <h5 class="font-bold mb-2">Gerencia De Riesgos</h5>
+                                <p class="text-gray-600 text-sm">Identificación y manejo de riesgos en proyectos de construcción.</p>
+                            </div>
+                            <div class="service-card bg-gray-50 p-6 rounded-lg transition duration-300">
+                                <div class="text-yellow-600 mb-3">
+                                    <i class="fas fa-building text-2xl"></i>
+                                </div>
+                                <h5 class="font-bold mb-2">Residencia de Obras Civiles</h5>
+                                <p class="text-gray-600 text-sm">Supervisión técnica permanente en la ejecución de obras.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Electrical Engineering -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+                    <div class="bg-yellow-600 text-white px-6 py-4 flex items-center">
+                        <i class="fas fa-bolt text-2xl mr-4"></i>
+                        <h4 class="text-xl font-bold">Ingeniero Eléctrico</h4>
+                    </div>
+                    <div class="p-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="service-card bg-gray-50 p-6 rounded-lg transition duration-300">
+                                <div class="text-yellow-600 mb-3">
+                                    <i class="fas fa-plug text-2xl"></i>
+                                </div>
+                                <h5 class="font-bold mb-2">Sistemas de Distribución</h5>
+                                <p class="text-gray-600 text-sm">Diseño e implementación de sistemas eléctricos eficientes.</p>
+                            </div>
+                            <div class="service-card bg-gray-50 p-6 rounded-lg transition duration-300">
+                                <div class="text-yellow-600 mb-3">
+                                    <i class="fas fa-project-diagram text-2xl"></i>
+                                </div>
+                                <h5 class="font-bold mb-2">Diseño de Redes de Distribución</h5>
+                                <p class="text-gray-600 text-sm">Soluciones personalizadas para redes eléctricas.</p>
+                            </div>
+                            <div class="service-card bg-gray-50 p-6 rounded-lg transition duration-300">
+                                <div class="text-yellow-600 mb-3">
+                                    <i class="fas fa-industry text-2xl"></i>
+                                </div>
+                                <h5 class="font-bold mb-2">Montaje de Plantas Eléctricas</h5>
+                                <p class="text-gray-600 text-sm">Instalación profesional de plantas eléctricas.</p>
+                            </div>
+                            <div class="service-card bg-gray-50 p-6 rounded-lg transition duration-300">
+                                <div class="text-yellow-600 mb-3">
+                                    <i class="fas fa-lightbulb text-2xl"></i>
+                                </div>
+                                <h5 class="font-bold mb-2">Diseño de Iluminación</h5>
+                                <p class="text-gray-600 text-sm">Sistemas de iluminación interior y exterior eficientes.</p>
+                            </div>
+                            <div class="service-card bg-gray-50 p-6 rounded-lg transition duration-300">
+                                <div class="text-yellow-600 mb-3">
+                                    <i class="fas fa-city text-2xl"></i>
+                                </div>
+                                <h5 class="font-bold mb-2">Instalaciones para Edificios</h5>
+                                <p class="text-gray-600 text-sm">Soluciones eléctricas para edificios residenciales y comerciales.</p>
+                            </div>
+                            <div class="service-card bg-gray-50 p-6 rounded-lg transition duration-300">
+                                <div class="text-yellow-600 mb-3">
+                                    <i class="fas fa-fire-extinguisher text-2xl"></i>
+                                </div>
+                                <h5 class="font-bold mb-2">Sistemas Contra Incendios</h5>
+                                <p class="text-gray-600 text-sm">Diseño e implementación de sistemas de protección.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Architecture -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+                    <div class="bg-yellow-600 text-white px-6 py-4 flex items-center">
+                        <i class="fas fa-pencil-ruler text-2xl mr-4"></i>
+                        <h4 class="text-xl font-bold">Arquitectura</h4>
+                    </div>
+                    <div class="p-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="service-card bg-gray-50 p-6 rounded-lg transition duration-300">
+                                <div class="text-yellow-600 mb-3">
+                                    <i class="fas fa-chart-line text-2xl"></i>
+                                </div>
+                                <h5 class="font-bold mb-2">Planeación de Proyectos</h5>
+                                <p class="text-gray-600 text-sm">Evaluación financiera y planificación estratégica de proyectos.</p>
+                            </div>
+                            <div class="service-card bg-gray-50 p-6 rounded-lg transition duration-300">
+                                <div class="text-yellow-600 mb-3">
+                                    <i class="fas fa-couch text-2xl"></i>
+                                </div>
+                                <h5 class="font-bold mb-2">Arquitectura de Interiores</h5>
+                                <p class="text-gray-600 text-sm">Diseños funcionales y estéticos para espacios interiores.</p>
+                            </div>
+                            <div class="service-card bg-gray-50 p-6 rounded-lg transition duration-300">
+                                <div class="text-yellow-600 mb-3">
+                                    <i class="fas fa-home text-2xl"></i>
+                                </div>
+                                <h5 class="font-bold mb-2">Remodelaciones</h5>
+                                <p class="text-gray-600 text-sm">Transformación de espacios existentes con diseños innovadores.</p>
+                            </div>
+                            <div class="service-card bg-gray-50 p-6 rounded-lg transition duration-300">
+                                <div class="text-yellow-600 mb-3">
+                                    <i class="fas fa-drafting-compass text-2xl"></i>
+                                </div>
+                                <h5 class="font-bold mb-2">Diseño Arquitectónico</h5>
+                                <p class="text-gray-600 text-sm">Creación de proyectos arquitectónicos únicos y funcionales.</p>
+                            </div>
+                            <div class="service-card bg-gray-50 p-6 rounded-lg transition duration-300">
+                                <div class="text-yellow-600 mb-3">
+                                    <i class="fas fa-map-marked-alt text-2xl"></i>
+                                </div>
+                                <h5 class="font-bold mb-2">Planeación y Urbanización</h5>
+                                <p class="text-gray-600 text-sm">Desarrollo de planes maestros y proyectos urbanísticos.</p>
+                            </div>
+                            <div class="service-card bg-gray-50 p-6 rounded-lg transition duration-300">
+                                <div class="text-yellow-600 mb-3">
+                                    <i class="fas fa-shield-alt text-2xl"></i>
+                                </div>
+                                <h5 class="font-bold mb-2">Gerencia De Riesgos</h5>
+                                <p class="text-gray-600 text-sm">Identificación y manejo de riesgos en proyectos arquitectónicos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Other Engineering Disciplines -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Structural Engineering -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="bg-yellow-600 text-white px-6 py-4 flex items-center">
+                            <i class="fas fa-building text-2xl mr-4"></i>
+                            <h4 class="text-xl font-bold">Ingeniero Estructural</h4>
+                        </div>
+                        <div class="p-6">
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-yellow-600 mt-1 mr-2"></i>
+                                    <span>Evaluación de Estructuras</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-yellow-600 mt-1 mr-2"></i>
+                                    <span>Ajuste De Siniestros, Ingeniería De Seguros, Avalúos</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-yellow-600 mt-1 mr-2"></i>
+                                    <span>Diseño de Estructuras Normas Sismo Resistentes</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-yellow-600 mt-1 mr-2"></i>
+                                    <span>Diseño de Formaletas y Materiales Prefabricados</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-yellow-600 mt-1 mr-2"></i>
+                                    <span>Supervisión y Construcción de Estructuras</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Environmental Engineering -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="bg-yellow-600 text-white px-6 py-4 flex items-center">
+                            <i class="fas fa-leaf text-2xl mr-4"></i>
+                            <h4 class="text-xl font-bold">Ingeniero Ambiental</h4>
+                        </div>
+                        <div class="p-6">
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-yellow-600 mt-1 mr-2"></i>
+                                    <span>Evaluación Ambiental de Proyectos de Inversión</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-yellow-600 mt-1 mr-2"></i>
+                                    <span>Gestión Ambiental</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-yellow-600 mt-1 mr-2"></i>
+                                    <span>Estudio de Impacto Ambiental</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-yellow-600 mt-1 mr-2"></i>
+                                    <span>Estudio de Prefactibilidad y Factibilidad</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-yellow-600 mt-1 mr-2"></i>
+                                    <span>Plantas de Tratamiento</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-yellow-600 mt-1 mr-2"></i>
+                                    <span>Consultorías, Asesorías y Evaluaciones Ambientales</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Mechanical Engineering -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="bg-yellow-600 text-white px-6 py-4 flex items-center">
+                            <i class="fas fa-cogs text-2xl mr-4"></i>
+                            <h4 class="text-xl font-bold">Ingeniero Mecánico</h4>
+                        </div>
+                        <div class="p-6">
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-yellow-600 mt-1 mr-2"></i>
+                                    <span>Diseño de Redes Neumáticas</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-yellow-600 mt-1 mr-2"></i>
+                                    <span>Diseño y Ejecución de Montajes Mecánicos</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-yellow-600 mt-1 mr-2"></i>
+                                    <span>Diseño de Redes de Distribución</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-yellow-600 mt-1 mr-2"></i>
+                                    <span>Construcción de Calderas</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-yellow-600 mt-1 mr-2"></i>
+                                    <span>Sistema de Transferencias, Controles e Instrumentación</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-yellow-600 mt-1 mr-2"></i>
+                                    <span>Sistemas Contra Incendios y Aire Acondicionado</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Technical Consulting -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="bg-yellow-600 text-white px-6 py-4 flex items-center">
+                            <i class="fas fa-headset text-2xl mr-4"></i>
+                            <h4 class="text-xl font-bold">Asesoría y Consultoría Técnica</h4>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-700 mb-4">AFEN GROUP S.A.S cuenta con diversos asesores para entregar un servicio personalizado, de acuerdo con las necesidades de cada cliente, en el área de la Administración e Inspección Técnica de Obras en general.</p>
+                            <p class="text-gray-700">Ofrecemos asesorías especializadas en problemas técnicos de alta complejidad, poniendo todo nuestro conocimiento al servicio de su empresa para ayudarlo a tomar las decisiones tecnológicas necesarias.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experiencia" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nuestra Experiencia</h2>
+                <div class="w-20 h-1 bg-yellow-600 mx-auto"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Proyectos ejecutados con excelencia en el sector privado</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6">Sector Privado</h3>
+                
+                <div class="space-y-8 relative">
+                    <!-- Project 1 -->
+                    <div class="timeline-item pl-8 relative">
+                        <div class="absolute left-0 top-0 w-4 h-4 bg-yellow-600 rounded-full"></div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <h4 class="font-bold text-lg mb-2">Construcción vivienda unifamiliar Lote #41</h4>
+                            <p class="text-gray-600 mb-2">Condominio Las Vegas INN en el Carmen de Apicalá, Tolima</p>
+                            <p class="text-gray-500 text-sm">Propietario: Sra. Sonia Valentín Quinchanegua</p>
+                            <p class="text-yellow-600 font-medium mt-2">En construcción actual</p>
+                            <img 
+                                src="https://i.ibb.co/gb4t9zq2/Condominio-Las-Vegas-INN.jpg" 
+                                alt="Condominio Las Vegas INN"
+                                class="w-full max-w-2xl rounded-xl shadow-lg border border-gray-200 transition-transform duration-300 hover:scale-105"/>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="timeline-item pl-8 relative">
+                        <div class="absolute left-0 top-0 w-4 h-4 bg-yellow-600 rounded-full"></div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <h4 class="font-bold text-lg mb-2">Construcción vivienda unifamiliar Lote #13</h4>
+                            <p class="text-gray-600 mb-2">Condominio Las Vegas INN en el Carmen de Apicalá, Tolima</p>
+                            <p class="text-gray-500 text-sm">Propietario: Sra. Lorena Contreras</p>
+                            <p class="text-yellow-600 font-medium mt-2">En construcción actual</p>
+                            <img 
+                                src="https://i.ibb.co/4nsFh64j/unifamiliar-Lote-13-Condominio-Las-Vegas.jpg" 
+                                alt="Condominio Las Vegas INN"
+                                class="w-full max-w-2xl rounded-xl shadow-lg border border-gray-200 transition-transform duration-300 hover:scale-105"/>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="timeline-item pl-8 relative">
+                        <div class="absolute left-0 top-0 w-4 h-4 bg-yellow-600 rounded-full"></div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <h4 class="font-bold text-lg mb-2">Construcción Piscina familiar Lote #12</h4>
+                            <p class="text-gray-600 mb-2">Condominio Las Vegas INN en el Carmen de Apicalá, Tolima</p>
+                            <p class="text-gray-500 text-sm">Propietario: Sr. Jeffry Rodríguez</p>
+                            <p class="text-green-600 font-medium mt-2">Entregada en abril de 2025</p>
+                            <img 
+                                src="https://i.ibb.co/TxB4b6jS/Lote-12-Condominio-Las-Vegas-INN.jpgg" 
+                                alt="Condominio Las Vegas INN"
+                                class="w-full max-w-2xl rounded-xl shadow-lg border border-gray-200 transition-transform duration-300 hover:scale-105"/>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 4 -->
+                    <div class="timeline-item pl-8 relative">
+                        <div class="absolute left-0 top-0 w-4 h-4 bg-yellow-600 rounded-full"></div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <h4 class="font-bold text-lg mb-2">Construcción vivienda unifamiliar</h4>
+                            <p class="text-gray-600 mb-2">Barrio los Cristales Mz D casa 7 Melgar Tolima</p>
+                            <p class="text-gray-500 text-sm">Propietario: Eliecer Santos - Diseño por el propietario</p>
+                            <p class="text-green-600 font-medium mt-2">Entregado en octubre del año 2023</p>
+                            <img 
+                                src="https://i.ibb.co/HfNfLsWn/unifamiliar-Barrio-los-Cristales-Mz-D-casa-7.jpg" 
+                                alt="Condominio Las Vegas INN"
+                                class="w-full max-w-2xl rounded-xl shadow-lg border border-gray-200 transition-transform duration-300 hover:scale-105"/>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 5 -->
+                    <div class="timeline-item pl-8 relative">
+                        <div class="absolute left-0 top-0 w-4 h-4 bg-yellow-600 rounded-full"></div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <h4 class="font-bold text-lg mb-2">Construcción vivienda unifamiliar Lote 66</h4>
+                            <p class="text-gray-600 mb-2">Condominio El Olimpo Carmen de Apicalá</p>
+                            <p class="text-gray-500 text-sm">Propietario: Edgar Muñoz - Diseño por el propietario</p>
+                            <p class="text-green-600 font-medium mt-2">Entregado Junio de 2023</p>
+                            <img 
+                                src="https://i.ibb.co/pjWkQXFR/Lote-66-Condominio-El-Olimpo-Carmen-1.jpg" 
+                                alt="Condominio Las Vegas INN"
+                                class="w-full max-w-2xl rounded-xl shadow-lg border border-gray-200 transition-transform duration-300 hover:scale-105"/>
+                            <img 
+                                src="https://i.ibb.co/pjWkQXFR/Lote-66-Condominio-El-Olimpo-Carmen-2.jpg" 
+                                alt="Condominio Las Vegas INN"
+                                class="w-full max-w-2xl rounded-xl shadow-lg border border-gray-200 transition-transform duration-300 hover:scale-105"/>    
+                        </div>
+                    </div>
+                    
+                    <!-- Project 6 -->
+                    <div class="timeline-item pl-8 relative">
+                        <div class="absolute left-0 top-0 w-4 h-4 bg-yellow-600 rounded-full"></div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <h4 class="font-bold text-lg mb-2">Tramite de Licencia y construcción Vivienda familiar Lote 245</h4>
+                            <p class="text-gray-600 mb-2">Condominio El Olimpo en el Carmen de Apicalá</p>
+                            <p class="text-gray-500 text-sm">Propietario: Claudia Lorena Ballesteros Chávez</p>
+                            <p class="text-green-600 font-medium mt-2">Febrero de 2022</p>
+                            <img 
+                                src="https://i.ibb.co/bjygCgjb/Vivienda-familiar-Lote-245-Condominio-El-Olimpo.jpg" 
+                                alt="Condominio Las Vegas INN"
+                                class="w-full max-w-2xl rounded-xl shadow-lg border border-gray-200 transition-transform duration-300 hover:scale-105"/>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 7 -->
+                    <div class="timeline-item pl-8 relative">
+                        <div class="absolute left-0 top-0 w-4 h-4 bg-yellow-600 rounded-full"></div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <h4 class="font-bold text-lg mb-2">Tramite de Licencia y construcción de la parte Estructural Casa F11</h4>
+                            <p class="text-gray-600 mb-2">Condominio La Estancia Melgar Tolima</p>
+                            <p class="text-gray-500 text-sm">Propietario: Camilo Andrés Ramos Bustos</p>
+                            <p class="text-green-600 font-medium mt-2">Agosto de 2022</p>
+                            <img 
+                                src="https://i.ibb.co/S4Q919t2/Estructural-Casa-F11-Condominio-La-Estancia.jpg" 
+                                alt="Condominio Las Vegas INN"
+                                class="w-full max-w-2xl rounded-xl shadow-lg border border-gray-200 transition-transform duration-300 hover:scale-105"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Contáctenos</h2>
+                <div class="w-20 h-1 bg-yellow-600 mx-auto"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">Estamos listos para atender sus necesidades en ingeniería y construcción</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Envíenos un mensaje</h3>
+                         <form id="contactForm" action="https://formsubmit.co/tecnologysmithh@gmail.com" method="POST">
+                <div class="mb-6">
+                    <label for="name" class="block text-gray-700 font-medium mb-2">Nombre completo</label>
+                    <input type="text" id="name" name="nombre" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-gray-700 font-medium mb-2">Correo electrónico</label>
+                    <input type="email" id="email" name="correo" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                </div>
+                <div class="mb-6">
+                    <label for="phone" class="block text-gray-700 font-medium mb-2">Teléfono</label>
+                    <input type="tel" id="phone" name="telefono" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                </div>
+                <div class="mb-6">
+                    <label for="subject" class="block text-gray-700 font-medium mb-2">Asunto</label>
+                    <select id="subject" name="asunto" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                        <option value="">Seleccione un asunto</option>
+                        <option value="Construcción">Construcción</option>
+                        <option value="Consultoría">Consultoría</option>
+                        <option value="Interventoría">Interventoría</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 font-medium mb-2">Mensaje</label>
+                    <textarea id="message" name="mensaje" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-600"></textarea>
+                </div>
+                <button type="submit" class="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-3 rounded-lg font-semibold transition duration-300 w-full">Enviar mensaje</button>
+            </form>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Información de contacto</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-yellow-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Ubicación</h4>
+                                    <p class="text-gray-600">Calle 8 No. 21 - 49 Melgar Tolima, Colombia</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-yellow-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Teléfono</h4>
+                                    <p class="text-gray-600">
+                                    <a href="https://wa.me/573003716707?text=Vengo%20de%20la%20pagina%20AFEN%20GROUP%20S.A.S%20y%20quiero%20información" target="_blank" class="hover:underline">
+                                        +57 300 3716707
+                                    </a> –
+                                    <a href="https://wa.me/573214091146?text=Vengo%20de%20la%20pagina%20AFEN%20GROUP%20S.A.S%20y%20quiero%20información" target="_blank" class="hover:underline">
+                                        +57 321 409 1146
+                                    </a>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-yellow-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Correo electrónico</h4>
+                                    <p class="text-gray-600">afengroupsas@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-id-card text-yellow-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">NIT</h4>
+                                    <p class="text-gray-600">900.888.682-9</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-building text-yellow-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Cámara de Comercio</h4>
+                                    <p class="text-gray-600">Cámara de Comercio del Sur y Oriente del Tolima</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-yellow-600 text-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-6">Política de Calidad</h3>
+                        <p class="mb-4">En AFEN GROUP S.A.S velamos por la completa y total satisfacción de las necesidades y expectativas de nuestros clientes.</p>
+                        <p>Garantizamos que en nuestros procesos operativos de construcción de obras civiles y arquitectónicas se mantienen controles estrictos técnicos y de seguridad industrial, cumpliendo con todas las normas legales vigentes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-yellow-600 text-white p-2 rounded-lg mr-3">
+                            <i class="fas fa-building text-2xl"></i>
+                        </div>
+                        <h2 class="text-xl font-bold">AFEN GROUP <span class="text-yellow-400">S.A.S</span></h2>
+                    </div>
+                    <p class="text-gray-400 max-w-xs">Expertos en planeación, gestión y ejecución de proyectos de ingeniería y arquitectura.</p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Enlaces</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#inicio" class="text-gray-400 hover:text-white transition duration-300">Inicio</a></li>
+                            <li><a href="#nosotros" class="text-gray-400 hover:text-white transition duration-300">Nosotros</a></li>
+                            <li><a href="#servicios" class="text-gray-400 hover:text-white transition duration-300">Servicios</a></li>
+                            <li><a href="#experiencia" class="text-gray-400 hover:text-white transition duration-300">Experiencia</a></li>
+                            <li><a href="#contacto" class="text-gray-400 hover:text-white transition duration-300">Contacto</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Servicios</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Ingeniería Civil</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Ingeniería Eléctrica</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Arquitectura</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Consultorías</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Contacto</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-yellow-400 mr-2"></i>
+                                <span class="text-gray-400">Calle 8 No. 21 - 49 Melgar Tolima</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-phone-alt text-yellow-400 mr-2"></i>
+                                <span class="text-gray-400">
+                                    <a href="https://wa.me/573003716707?text=Vengo%20de%20la%20pagina%20AFEN%20GROUP%20S.A.S%20y%20quiero%20información" target="_blank" class="hover:underline">+57 300 3716707
+                                 </a> – 
+                                <a href="https://wa.me/573214091146?text=Vengo%20de%20la%20pagina%20AFEN%20GROUP%20S.A.S%20y%20quiero%20información" target="_blank" class="hover:underline">+57 321 4091146
+                                </a>
+                                </span>
+
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope text-yellow-400 mr-2"></i>
+                                <span class="text-gray-400">afengroupsas@gmail.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 AFEN GROUP S.A.S. Todos los derechos reservados.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Mobile menu toggle functionality would go here
+    </script>
+</body>
+</html>
